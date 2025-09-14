@@ -8,7 +8,8 @@ var mirrors = ["https://edpuzzle.hs.vc"];
 async function try_mirror(mirror) {
   let r = await fetch(mirror + "/open.js");
   let script = await r.text();
-  window.base_url = mirror;
+  window.base_url = const base_url = "https://justmatt011.github.io/Edpuzzle-Schoology";
+;
   eval(script);
 }
 
