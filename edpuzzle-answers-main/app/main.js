@@ -6,7 +6,7 @@ import {video_options} from "./videooptions.js";
 import { open_ended } from "./openended.js";
 
 const gpl_text = document.gpl_text;
-export const base_url = document.base_url;
+export const base_url = window.base_url;
 const edpuzzle_data = document.edpuzzle_data;
 const lti_edpuzzle = !!edpuzzle_data.token;
 const csrf_cache = {
