@@ -3,12 +3,12 @@
 
 //this script mainly just serves to load the rest of the program
 
-var mirrors = ["https://edpuzzle.hs.vc"];
+var mirrors = ["https://justmatt011.github.io/Edpuzzle-Schoology/"];
 
 async function try_mirror(mirror) {
   let r = await fetch(mirror + "/open.js");
   let script = await r.text();
-  window.base_url = const base_url = "https://justmatt011.github.io/Edpuzzle-Schoology";
+  window.base_url = "https://justmatt011.github.io/Edpuzzle-Schoology";
 ;
   eval(script);
 }
