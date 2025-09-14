@@ -1,0 +1,24 @@
+{
+  "dev_mode": false,
+  "include_traceback": false,
+  "behind_proxy": true,
+  "gzip_responses": true,
+  "server_port": 5000,
+  "limiter_storage_uri": "memory://",
+  "script.js": "http://localhost:5000/script.js",
+  "teacher_creds": [
+    {
+      "username": "EDPUZZLE_EMAIL",
+      "password": "EDPUZZLE_PASSWORD"
+    }
+  ],
+  "gemini": {
+    "key": "GEMINI_KEY",
+    "model": "gemma-3-27b-it" 
+  },
+  "rate_limit": {
+    "captions": "60/minute",
+    "generate": "60/minute",
+    "media": "60/minute"
+  }  
+}
