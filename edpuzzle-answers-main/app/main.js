@@ -1,5 +1,8 @@
 //Copyright (C) 2025 ading2210
 //see README.md for more information
+// use jsDelivr CDN as the base so other assets (popup.html, CSS) fetch from the same origin
+const base_url = "https://cdn.jsdelivr.net/gh/justmatt011/edpuzzle-solver@latest";
+
 import {video_skipper, skipper_loaded} from "./skipper.js";
 import {auto_answers, answerer_loaded} from "./autoanswers.js";
 import {video_options} from "./videooptions.js";
